@@ -1,0 +1,28 @@
+Vous devez créer le plus merveilleux babillard de Haïkus célébrant l'évanescence des choses.
+Détails
+Vous devez créer trois pages/sections:
+
+Une page dans laquelle un utilisateur founira son nom (pas d'authentification). Ce nom sera sauvegardé dans un contexte pour être affiché de nouveau par la suite. Une redirection avec useRouter mènera vers la page suivante.
+Une page affichant la liste des Haïkus disponibles (titre). Un clic sur un titre mènera vers une pagé à url dynamique dédié à ce Haïku affichant son texte ainsi que le nom de l'auteur*.*** Un formulaire permettra d'ajouter un commentaire (qui sont également affichés dans la page). Le nom de l'auteur du commentaire sera récupéré depuis le contexte.
+Une section ou une page devront permettre d'ajouter un nouveau Haïku (titre et texte, l'auteur étant récupéré par le contexte) et en sélectionnant un icône représentatif par un choix donné. (Vous pouvez peut-être utiliser Lucide Icons avec un state pour se souvenir de celui qui a été sélectionné).
+N'importe quel utilisateur devra pouvoir supprimer un commentaire qu'il trouverait offensant (ou pas).
+L'ajout d'un haïku devra rediriger l'utilisateur vers la liste de haïkus ou rafraîchir la page si l'utilisateur s'y trouve déjà.
+L'ajout d'un commentaire devra entraîner le rafraîchissement de la page.
+Le travail implique un schéma pour les Haïkus et un schéma pour les Commentaires. On acceptera la redondance des noms d'utilisateur dans les deux schémas.
+Joignez-vous à moi pour célébrer la beauté des choses et leur évanescense en exploitant vos talents d'intégration et de design à leur maximum.
+Étant donné le caractère pédagogique de l'exercice et son contexte académique, merci de bien vouloir faire un ménage des choses avant la remise.
+Détails techniques
+Les ajouts et suppressions devront être exécutés à l'aide de Server Actions -> Data.
+Pas de onSubmit sur les formulaires, on utilisera l'attribut action tel que vu en classe. (Pas de useEffect non plus, comme on utilise aussi des composantes serveur)
+Pour des fins de révisions, il est nécessaire d'utiliser db.query pour récupérer la liste des Haïkus en plus de leurs détails et commentaires.
+On utilisera Suspense là où il est utile (en repoussant les composantes async vers les extrémités de l'arbre de composantes)
+Votre "application" doit être déployée en ligne en utilisant Vercel/Turso.
+Veuillez préparer un peu de contenu sur Turso afin que je puisse apprécier les choses.
+Critères de correction
+Absence d'erreur de programmation
+Respect des contraintes de développement
+Justesse de la création des composantes
+Optimisation et clarté du code Javascript
+Qualité de l'intégration
+Gestion adéquate de l'état des composantes
+Remise au début du cours 10 - Pondération 5%

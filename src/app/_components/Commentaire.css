@@ -1,0 +1,74 @@
+/* Conteneur général */
+.commentaires-container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Liste des commentaires */
+.commentaires-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 32rem; /* largeur max pour centrer */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Item commentaire */
+.commentaires-container li {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border: 1px solid #5eead4; /* teal-300 */
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Auteur */
+.commentaires-container h2{
+  color: #0f766e; /* teal-700 */
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Texte du commentaire */
+.commentaires-container p {
+  color: #374151; /* gris foncé */
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+/* Bouton supprimer */
+.commentaires-container .btn-supprimer {
+  align-self: flex-end;
+  background-color: #14b8a6; /* teal-500 */
+  color: white;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.btn-supprimer:hover {
+  background-color: #0f766e; /* teal-700 */
+}
+
+.btn-supprimer:active {
+  transform: scale(0.95);
+}
+
+
+
