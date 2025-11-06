@@ -21,13 +21,14 @@ export const ajouterCommentaireAction = async(contenu, nomAuteur, idHaiku)=>{
 
 export const getAllCommentaireAction = async(idHaiku) =>{ 
     const  resultat = await  getAllCommentaire(idHaiku);
+    revalidatePath("/haikus");
     return resultat;
 }
 
 export const ajouterHaikuAction = async(contenu, nomAuteur, icone,titre)=>
 {
     const resultat = await ajouterHaiku(contenu, nomAuteur, icone,titre);
-
+    revalidatePath("/haikus");
     return resultat;
 }
 
