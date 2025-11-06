@@ -10,7 +10,7 @@ export const getAllHaikuAction = async () => {
 
 export const getHaikuParIdAction = async(idHaiku)=>{
     const resultat =await getHaikuParId(idHaiku);
-    
+    revalidatePath("/haikus"+idHaiku);
     return resultat;
 }
 export const ajouterCommentaireAction = async(contenu, nomAuteur, idHaiku)=>{
